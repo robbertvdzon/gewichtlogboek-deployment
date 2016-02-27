@@ -1,10 +1,12 @@
-#mongo:
-#  image: mongo
+mongo:
+  image: mongo
 
   
-gewchtlogboek:
+gewichtlogboek:
   build: gewichtlogboek
-#  links:
-#    - mongo
+  links:
+    - mongo
   volumes:
     - ./data:/data
+  ports:
+    - "81:4567"
