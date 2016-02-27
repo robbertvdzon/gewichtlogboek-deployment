@@ -1,0 +1,10 @@
+#mongo:
+#  image: mongo
+
+  
+gewchtlogboek:
+  build: gewichtlogboek
+#  links:
+#    - mongo
+  volumes:
+    - ./data:/data
