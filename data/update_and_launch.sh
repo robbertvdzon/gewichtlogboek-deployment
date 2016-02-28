@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar gewichtlogboek.jar
+java -DmongoDbHost="mongo" -jar gewichtlogboek.jar
