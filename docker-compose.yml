@@ -1,11 +1,10 @@
 mongo:
-  image: mongo
-
+  image: mongodb
   
 gewichtlogboek:
   build: gewichtlogboek
   links:
-    - mongo
+    - mongodb:mongo
   volumes:
     - ./data:/data
   ports:
